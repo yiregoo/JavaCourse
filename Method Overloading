@@ -1,0 +1,39 @@
+public class methodOverloading {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int newScore = calculateScore(" Tim", 500);
+		System.out.println("New score is " + newScore);
+		calculateScore(75);
+		calculateScore("Amy", 100);
+		calculateScore();
+	}
+	
+	
+	public static int calculateScore(String playerName, int score) {
+		
+		System.out.println("Player " + playerName + " scored " + score + " points");
+		
+		int totalScore = score * 1000;
+		return totalScore;
+	}
+	
+    public static int calculateScore(int score) {
+		
+		System.out.println("Unnamed player scored " + score + " points");
+		
+		int totalScore = score * 1000;
+		return totalScore;
+	}
+    
+ public static int calculateScore() {
+		
+		System.out.println("No player will be calculated.");
+		return 0;
+	}
+	
+
+}
+
+/***********************************************/
